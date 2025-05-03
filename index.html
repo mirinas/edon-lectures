@@ -6,11 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing HTML</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-size: x-large;
+        }
+    </style>
 </head>
 
 <body>
     
     <h2>Medžiai</h2>
+
+
+    <div style="background: red;" class="half">
+        <div style="background: blue;" class="half"></div>
+        <div style="background: green; height: 5em; width: 50vw"></div>
+    </div>
+
 
     <header>
         <img height="100" src="https://i.pinimg.com/474x/39/c6/fb/39c6fbae113ceea17585d6ab52a3669f.jpg">
@@ -18,15 +31,20 @@
 
         <nav>
             <a href="travel.html">Kelionės</a>
-            <a href="history.html">Istorija</a>
+            <a class="remelis" href="history.html">Istorija</a>
             <a href="index.html">Test puslapis</a>
         </nav>
 
         <hr>
     </header>
 
+    <h6>Tekstas</h6>
     <p>Pirma HTML paskaita <a target="_blank" href="https://edon.lt">edon</a> akademijoje.</p>
-    <img alt="Ąžuolo lapai" width="200" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDuZ9yznuA1-LmyRPNlBfD6iX3VAZUXA4EC0FL1OiReigj9rE8Etw0hIJJFrzy_h1dLye1Vq2VlxtsPQAtYq471g">
+
+    <div class="center">
+        <img id="tree-image" class="remelis" alt="Ąžuolo lapai" width="200" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDuZ9yznuA1-LmyRPNlBfD6iX3VAZUXA4EC0FL1OiReigj9rE8Etw0hIJJFrzy_h1dLye1Vq2VlxtsPQAtYq471g">
+    </div>
+    
     <span>Tekstas prie nuotraukos</span>
 
     <h6>Elementai</h6>
@@ -39,7 +57,7 @@
 
     <ol type="I" start="3">
         <li>Ąžuolas</li>
-        <li>Pušis</li>
+        <li class="remelis">Pušis</li>
         <li>Eglė</li>
         <ul>
             <li>Smėlinė</li>
@@ -47,9 +65,9 @@
         </ul>
     </ol>
 
-    <h3>Komentarai</h3>
+    <h3 class="remelis">Komentarai</h3>
     <form>
-        <label>Kaip vertinate straipsnį:</label>
+        <label style="color: blue">Kaip vertinate straipsnį:</label>
         <br>
         <input type="range">
         <br>
@@ -61,7 +79,7 @@
     </form>
 
     <hr>
-    <p>
+    <p id="lotyniska-pastraipa">
         Aliquam ornare, <span>dolor sed convallis</span> fermentum, leo metus luctus odio, a tincidunt ex erat in felis. Ut viverra odio id elementum vulputate. Aliquam erat volutpat. Aliquam eget metus libero. Proin laoreet, odio in efficitur laoreet, nibh turpis sodales sem, at dictum urna tortor posuere elit. Maecenas et ligula sit amet ligula condimentum lacinia nec non eros. In hac habitasse platea dictumst. Aliquam et sollicitudin lorem. Donec vitae nibh lacus. Nullam quis metus at elit aliquet ultricies sed quis orci. Donec rhoncus dui ut tellus consequat ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus.
     </p>
 
