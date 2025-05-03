@@ -4,56 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History</title>
-    <link rel="stylesheet" href="site.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
 
-    <header>
-        <img height="100" src="https://i.pinimg.com/474x/39/c6/fb/39c6fbae113ceea17585d6ab52a3669f.jpg">
-        <h2>Kelionių puslapis - istorija</h2>
+    <header class="text-center border-4 m-8 p-4 rounded-xl">
+        <div class="flex items-center content-center">
+            <img class="h-25 rounded-full" height="100" src="https://i.pinimg.com/474x/39/c6/fb/39c6fbae113ceea17585d6ab52a3669f.jpg">
+            <h2 class="text-4xl inline">Kelionių puslapis - istorija</h2>
+        </div>
 
         <nav>
-            <a href="travel.html">Kelionės</a>
-            <a href="history.html">Istorija</a>
-            <a href="index.html">Test puslapis</a>
+            <a class="underline mx-6 hover:text-red-700" href="travel.html">Kelionės</a>
+            <a class="underline mx-6 hover:text-red-700" href="history.html">Istorija</a>
+            <a class="underline mx-6 hover:text-red-700" href="index.html">Test puslapis</a>
         </nav>
     </header>
 
     <main>
-        <h3>Istorijos straipsniai</h3>
-        <form>
-            <label>Pasirink miestą:</label>
-            <select>
-                <option>Vilnius</option>
-                <option>Barselona</option>
-                <option>Londonas</option>
-            </select>
-            <p>
-                <label>Pasirink laikotarpį:</label>
-                <br>
-                <label>Nuo:</label>
-                <input type="range">
-                
-                <label>Iki:</label>
-                <input style="direction: rtl;" type="range">
-            </p>
-            <textarea placeholder="Your comment..."></textarea>
-        </form>
+        <h3>Galerija</h3>
 
-        <table border="5">
-            <tr>
-                <th>Metai</th>
-                <th>Įvykis</th>
-            </tr>
-            <tr>
-                <td>1600 m.</td>
-                <td>Apiplaukė pasaulį</td>
-            </tr>
-            <tr>
-                <td>1900 m.</td>
-                <td>Pradėjo kariauti</td>
-            </tr>
-        </table>
+        <div id="gallery">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+            <img src="https://images.adsttc.com/media/images/5254/4190/e8e4/4eff/0200/06cf/large_jpg/sfpassio.jpg?1381253501">
+        </div>
+
+
     </main>
     
 </body>
