@@ -2,13 +2,18 @@
 body {
     font-family: Copperplate;
     font-size: larger;
-    background: rgb(233, 213, 187);
+    background: var(--bg-color);
 
     --accent-color: rgb(135, 97, 0);
     --article-border: rgb(133, 127, 106);
+    --bg-color: rgb(233, 213, 187);
 }
 
 header {
+    position: sticky;
+    top: 1em;
+    background: var(--bg-color);
+
     text-align: center;
     margin: 3em;
     margin-top: 1em;
@@ -94,6 +99,39 @@ article img {
     text-decoration: none;
 }
 
-/* nav {
-    text-align: left;
-} */
+
+@media (max-width: 1000px) {
+    article p {
+        display: block;
+        width: 100%;
+    }
+
+    article img {
+        display: block;
+        margin: auto;
+
+        width: unset;
+        height: 200px;
+    }
+    nav a {
+        font-size: 20px;
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 650px) {
+    article {
+        width: unset;
+        margin: 1em;
+    }
+    article img {
+        width: 100%;
+        height: unset;
+    }
+    .title h2 {
+        display: none;
+    }
+    nav a {
+        display: block;
+    }
+}
